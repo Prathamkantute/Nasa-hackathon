@@ -1,0 +1,49 @@
+<%- include("partials/header") -%>
+
+    <h1 class="Name"><%= name %></h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="description"><%= description %></p>
+            </div>
+            <div class="col-md-6">
+
+                <div class="ocean-map-container">
+                    <div id="map" style="height: 1850%;">
+                    </div>
+                </div> 
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Surface Area</td>
+                    </tr>
+                    <tr>
+                        <td>Average Depth</td>
+                    </tr>
+                    <tr>
+                        <td>Average Temperature</td>
+                    </tr>
+                    <tr>
+                        <td>Max Depth</td>
+                    </tr>
+                    <tr>
+                        <td>Max Depth Location</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/js/oceans/<%= name %>.js"></script>
+
+<%- include("partials/footer") -%> 
